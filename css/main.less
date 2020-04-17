@@ -1,0 +1,251 @@
+@blue: #88acc6;
+@black: #212529;
+@red: #bc030c;
+
+.text-info {
+  color: @blue !important;
+}
+
+a {color: @black;}
+a:hover {color: lighten(@black, 10%)}
+
+.blog-header .custom-control {
+  line-height: 1.4;
+}
+
+.blog-header .custom-control-input:checked~.custom-control-label::before {
+  border-color: darken(@red, 7%);
+  background-color: @red;
+}
+
+.blog-header-logo {
+  position: relative;
+  z-index: 1000;
+  display: block;
+}
+
+.blog-header-logo::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 147px auto;
+  background-image: url('/img/logo2.svg');
+  position: absolute;
+  top: 0;
+}
+
+.socials-icon {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  color: #a6a6a5;
+  font-size: 1.35rem;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all 0.15s ease;
+}
+.socials-icon:hover {
+  color: #fff;
+}
+
+.socials-icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #e5e5e5;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all 0.15s ease;
+}
+
+.socials-icon:last-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #e5e5e5;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all 0.15s ease;
+}
+
+.socials-icon_rss:hover {
+  background: #fd7e14;
+}
+.socials-icon_email:hover {
+   background: #d93025;
+ }
+.socials-icon_facebook:hover {
+  background: #4267b2;
+}
+.socials-icon_telegram:hover {
+  background: #1e96d3;
+}
+.socials-icon_twitter:hover {
+  background: #00acee;
+}
+.socials-icon_google:hover {
+  background: #4285f4;
+}
+.socials-icon_wk:hover {
+  background: #597ba5;
+}
+.socials-icon_yandex:hover {
+  background: #f00;
+}
+.socials-icon_ok:hover {
+  background: #f7931e;
+}
+
+.card-body {
+  padding: 0 1.25rem;
+}
+
+.card-text {
+  line-height: 1.2;
+}
+
+.list_type_square {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.list__item {
+  color: @blue;
+  padding-right: 15px;
+}
+
+.list_half {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.block-title_link {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: .8rem;
+  padding-left: 1rem;
+  display: block;
+}
+
+.newsitem_params {
+  margin-bottom: .5rem;
+}
+
+.newsitem_params {
+  color: @blue;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  font-size: .8rem;
+  color: lighten(@black, 40%);
+}
+
+.hot-news_carusel .block-title {
+  position: relative;
+  height: 10px;
+  margin-bottom: 10px;
+  background: none;
+}
+.hot-news_carusel .block-title:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid @blue;
+  content: ' ';
+  top: 4px;
+}
+.hot-news_carusel .block-title>h1 {
+  color: @black;
+  position: absolute;
+  background: #fff;
+  top: 0px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 9px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.hot-news_carusel {
+  border-bottom: 1px solid @blue;
+}
+
+.news-body {
+  padding: .2rem;
+  line-height: 1.2;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  /*width: 19px;
+  height: 43px;*/
+  position: absolute;
+  top: calc(50% - 40px) !important;
+ /* margin: auto;
+  text-indent: -9999em;*/
+  font-size: 2.5rem !important;
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background .2s;*/
+  outline: none;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: @blue;
+}
+/*.owl-carousel .owl-nav button.owl-prev {
+  background-image: url(/img/icon-arrow-left-g.png);
+}
+.owl-carousel .owl-nav button.owl-next {
+  background-image: url(/img/icon-arrow-right-g.png);
+}*/
+.owl-carousel .owl-nav button.owl-prev:hover {
+ /* background-image: url(/img/icon-arrow-left-r.png);*/
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+  /*background-image: url(/img/icon-arrow-right-r.png);*/
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .owl-carousel .owl-nav button.owl-prev {
+    left: calc(-30px);
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    right: calc(-30px);
+  }
+}
+
